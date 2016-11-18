@@ -1,5 +1,6 @@
 ---
 title: "Hello!"
+layout: default
 ---
 
 ## `GovukSchemas::Schema`
