@@ -1,7 +1,6 @@
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 require "gem_publisher"
-require "yard"
 
 RSpec::Core::RakeTask.new(:spec)
 
@@ -13,7 +12,9 @@ task :publish_gem do |_t|
   puts "Published #{published_gem}" if published_gem
 end
 
-
-YARD::Rake::YardocTask.new do |t|
-  t.options = ['--no-private', '--markup', 'markdown', '--output-dir', 'docs']
+task :docs do
+  require 'ruby_markdown_doc'
+  RubyMarkdownDoc.generate(
+    github_repo: "alphagov/govuk_schemas_gem",
+  )
 end
