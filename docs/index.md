@@ -1,3 +1,7 @@
+---
+title: "Hello!"
+---
+
 ## `GovukSchemas::Schema`
 
 ### `find`
@@ -59,7 +63,7 @@ Returns a new `GovukSchemas::RandomExample` object.
 - `schema` (`Hash`) — A JSON schema.
 **Returns**:
 
-- (`GovukSchemas::RandomExample`) — 
+- (`GovukSchemas::RandomExample`) —
 Examples:
 
 ```ruby
@@ -75,10 +79,10 @@ Returns a new `GovukSchemas::RandomExample` object.
 
 **Params**:
 
-- `schema_key_value` (`Hash`) — 
+- `schema_key_value` (`Hash`) —
 **Returns**:
 
-- (`GovukSchemas::RandomExample`) — 
+- (`GovukSchemas::RandomExample`) —
 Examples:
 
 ```ruby
