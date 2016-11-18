@@ -24,10 +24,12 @@ Find a schema by name
 Examples:
 
 ```ruby
+
 GovukSchemas::Schema.find(links_schema: "detailed_guide")
 GovukSchemas::Schema.find(frontend_schema: "detailed_guide")
 GovukSchemas::Schema.find(publisher_schema: "detailed_guide")
-GovukSchemas::Schema.find(notification_schema: "detailed_guide")```
+GovukSchemas::Schema.find(notification_schema: "detailed_guide")
+```
 
 
 [View on GitHub](https://github.com/alphagov/govuk_schemas_gem/blob/master/lib/govuk_schemas/schema.rb#L13)
@@ -98,8 +100,10 @@ Returns a new `GovukSchemas::RandomExample` object.
 Examples:
 
 ```ruby
+
 schema = GovukSchemas::Schema.find("detailed_guide", schema_type: "frontend")
-GovukSchemas::RandomExample.new(schema).payload```
+GovukSchemas::RandomExample.new(schema).payload
+```
 
 
 [View on GitHub](https://github.com/alphagov/govuk_schemas_gem/blob/master/lib/govuk_schemas/random_example.rb#L17)
@@ -123,9 +127,11 @@ Returns a new `GovukSchemas::RandomExample` object.
 Examples:
 
 ```ruby
+
 generator = GovukSchemas::RandomExample.for_schema(frontend_schema: "detailed_guide")
 generator.payload
-# => {"base_path"=>"/e42dd28e", "title"=>"dolor est...", "publishing_app"=>"elit"...}```
+# => {"base_path"=>"/e42dd28e", "title"=>"dolor est...", "publishing_app"=>"elit"...}
+```
 
 
 [View on GitHub](https://github.com/alphagov/govuk_schemas_gem/blob/master/lib/govuk_schemas/random_example.rb#L32)
@@ -147,8 +153,10 @@ Return a hash with a random content item
 Examples:
 
 ```ruby
+
 GovukSchemas::RandomExample.for_schema("detailed_guide", schema_type: "frontend").payload
-# => {"base_path"=>"/e42dd28e", "title"=>"dolor est...", "publishing_app"=>"elit"...}```
+# => {"base_path"=>"/e42dd28e", "title"=>"dolor est...", "publishing_app"=>"elit"...}
+```
 
 
 [View on GitHub](https://github.com/alphagov/govuk_schemas_gem/blob/master/lib/govuk_schemas/random_example.rb#L45)
@@ -173,9 +181,11 @@ isn't valid against the schema an error will be raised.
 Examples:
 
 ```ruby
+
 random = GovukSchemas::RandomExample.for_schema("detailed_guide", schema_type: "frontend")
 random.merge_and_validate(base_path: "/foo")
-# => {"base_path"=>"/e42dd28e", "title"=>"dolor est...", "publishing_app"=>"elit"...}```
+# => {"base_path"=>"/e42dd28e", "title"=>"dolor est...", "publishing_app"=>"elit"...}
+```
 
 
 [View on GitHub](https://github.com/alphagov/govuk_schemas_gem/blob/master/lib/govuk_schemas/random_example.rb#L68)
