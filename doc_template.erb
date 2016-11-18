@@ -1,9 +1,9 @@
-<% all.each do |o| %>
-## `<%= o.to_s %>`
+<% classes.each do |klass| %>
+## `<%= klass.to_s %>`
 
-<% o.meths(inherited: false, included: false).each do |meth| %>
+<% klass.meths(inherited: false, included: false).each do |meth| %>
 <% next unless meth.visibility == :public %>
-### `<%= meth.to_s %>`
+### `<%= meth.name('.') %>`
 
 <%= meth.base_docstring %>
 
