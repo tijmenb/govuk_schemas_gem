@@ -1,4 +1,5 @@
 <% classes.each do |klass| %>
+<% next if klass.tags(:private).any? %>
 ## `<%= klass.to_s %>`
 
 <% klass.meths(inherited: false, included: false).each do |meth| %>

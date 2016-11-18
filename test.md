@@ -1,8 +1,5 @@
 
-## `GovukSchemas::InvalidContentGenerated`
 
-
----
 
 ## `GovukSchemas::Schema`
 
@@ -80,6 +77,7 @@ Examples:
 
 
 ---
+
 
 ## `GovukSchemas::RandomExample`
 
@@ -198,49 +196,4 @@ random.merge_and_validate(base_path: "/foo")
 
 ---
 
-## `GovukSchemas::RandomItemGenerator`
-
-
-
-### `#initialize`
-
-
-
-**Params**:
-
-
-**Returns**:
-
-- (`RandomItemGenerator`) — a new instance of RandomItemGenerator
-
-
-Examples:
-
-
-[View on GitHub](https://github.com/alphagov/govuk_schemas_gem/blob/master/lib/govuk_schemas/random_item_generator.rb#L13)
-
-
-
-### `#payload`
-
-
-
-**Params**:
-
-
-**Returns**:
-
-
-Examples:
-
-
-[View on GitHub](https://github.com/alphagov/govuk_schemas_gem/blob/master/lib/govuk_schemas/random_item_generator.rb#L17)
-
-
-
-
-
-
-
----
 
