@@ -3,7 +3,7 @@
 
 <% o.meths(inherited: false, included: false).each do |meth| %>
 <% next unless meth.visibility == :public %>
-### <%= meth.to_s %>
+### `<%= meth.to_s %>`
 
 <%= meth.base_docstring %>
 

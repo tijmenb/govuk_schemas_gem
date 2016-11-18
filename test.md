@@ -7,7 +7,7 @@
 
 
 
-### GovukSchemas::Schema.find
+### `GovukSchemas::Schema.find`
 
 Find a schema by name
 
@@ -36,7 +36,7 @@ GovukSchemas::Schema.find(notification_schema: "detailed_guide")
 
 
 
-### GovukSchemas::Schema.all
+### `GovukSchemas::Schema.all`
 
 Return all schemas in a hash, keyed by schema name
 
@@ -57,7 +57,7 @@ Examples:
 
 
 
-### GovukSchemas::Schema.random_schema
+### `GovukSchemas::Schema.random_schema`
 
 Return a random schema of a certain type
 
@@ -83,7 +83,7 @@ Examples:
 
 
 
-### GovukSchemas::RandomExample#initialize
+### `GovukSchemas::RandomExample#initialize`
 
 Returns a new `GovukSchemas::RandomExample` object.
 
@@ -110,7 +110,7 @@ GovukSchemas::RandomExample.new(schema).payload
 
 
 
-### GovukSchemas::RandomExample.for_schema
+### `GovukSchemas::RandomExample.for_schema`
 
 Returns a new `GovukSchemas::RandomExample` object.
 
@@ -138,7 +138,7 @@ generator.payload
 
 
 
-### GovukSchemas::RandomExample#payload
+### `GovukSchemas::RandomExample#payload`
 
 Return a hash with a random content item
 
@@ -163,7 +163,7 @@ GovukSchemas::RandomExample.for_schema("detailed_guide", schema_type: "frontend"
 
 
 
-### GovukSchemas::RandomExample#merge_and_validate
+### `GovukSchemas::RandomExample#merge_and_validate`
 
 Return a content item merged with a hash. If the resulting content item
 isn't valid against the schema an error will be raised.
@@ -199,7 +199,7 @@ random.merge_and_validate(base_path: "/foo")
 
 
 
-### GovukSchemas::RandomItemGenerator#initialize
+### `GovukSchemas::RandomItemGenerator#initialize`
 
 
 
@@ -218,7 +218,7 @@ Examples:
 
 
 
-### GovukSchemas::RandomItemGenerator#payload
+### `GovukSchemas::RandomItemGenerator#payload`
 
 
 
